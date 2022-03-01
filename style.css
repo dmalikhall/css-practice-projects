@@ -1,0 +1,336 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #111;
+    color: white;
+}
+
+#container {
+    padding: 24px;
+    max-width: 90%;
+
+
+    display: grid;
+    grid-template-rows: auto 1fr ;
+    height: 100vh;
+
+    margin: 0 auto;
+    
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.brand {
+    font-size: 3.25rem;
+    font-weight: 700;
+    flex-grow: 1;
+}
+
+.nav-list {
+    margin-right: 40px;
+
+}
+
+.nav-items {
+    text-decoration: none;
+    margin-right: 24px;
+    font-size: 1.2rem;
+}
+
+.nav-button {
+    padding: 1em 2em;
+    border-radius: 5px;
+    border: none;
+}
+
+main {  
+    /* display: flex;
+    padding: 40px;
+    align-items: center; */
+    height: 80vh;
+    position: relative;
+
+    
+
+}
+
+.main-content {
+    /* margin-top: 10vh; */
+
+
+    position: absolute;
+    top: 30%;
+    
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+
+    background-color: rgb(43, 27, 58);
+    
+    border-radius: 25px;
+
+    width: fit-content;
+    padding: 10px;
+    margin-bottom: 40px;
+     
+}
+
+.main-content .header-main button {
+    background-color: rgb(102, 61, 148);
+    margin-right: 18px;
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 2px 12px;
+
+}
+
+.main-content h1 {
+    font-weight: 900;
+    font-size: 6rem;
+    width: 60%;
+}
+
+.email-form {
+    margin-top: 40px;
+    display: flex;   
+    width: 34.375rem;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.email-form .mail {
+    padding: 1rem 2rem;
+    background-color: rgb(37, 37, 37);
+
+    grid-column: 1 / 5;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+
+}
+
+.email-form .start {
+    padding: 1rem;
+    background-color: rgb(98, 97, 97);
+    text-align: center;
+    
+    grid-column: 5 / 8;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.resources {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.resources div {
+    margin: 24px;
+    padding: 12px;
+}
+
+.resources i {
+    background-color: rgb(37, 37, 37);
+    padding: 25px;
+
+    border-radius: 50%;
+
+    margin-bottom: 24px;
+}
+
+.resources h2 {
+    margin-bottom: 24px;
+    font-size: 2em;
+}
+
+.resources p {
+    margin-bottom: 24px;
+    font-size: 1.25rem;
+
+}
+
+.resources button {
+    background-color: rgb(37, 37, 37);
+    color: white;
+
+    padding: .5rem 1.5rem;
+
+    border: none;
+    border-radius: 5px;
+
+}
+
+.test {
+    height: 50vh;
+    padding: 12px;    
+}
+
+.test h1{
+    font-weight: 900;
+    font-size: 6rem;
+    
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+
+    
+}
+
+.one-card {
+    background-color: rgb(37, 37, 37);
+    padding: 2em;
+
+    border-radius: 5px;
+   
+
+    margin-right: 40px;
+       
+}
+
+.one-card p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.two-card p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.two-card {
+    background-color: rgb(37, 37, 37);
+    padding: 2em;
+
+    border-radius: 5px;
+   
+
+    margin-right: 40px;
+   
+}
+
+.tag {
+    margin-bottom: 24px;
+    background-color: rgb(102, 61, 148);
+    width: fit-content;
+    padding: .5em 1em;
+
+    border-radius: 5px;
+    border: none;
+}
+
+.cards button {
+    padding: 1rem 2rem;
+    color: white;
+    background: #111;
+
+    border: none;
+    border-radius: 5px;
+
+}
+
+.price-content {
+    display: flex;
+    align-items: center;
+}
+
+.left-words{
+    width: 50%;
+}
+
+.left-words h1 {
+    margin-bottom: 40px;
+    font-size: 52px;
+}
+
+.left-words p {
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+    
+    
+    margin-left: 40px;
+    height: 100vh;
+}
+
+.free-choice {
+    background-color: rgb(37, 37, 37);
+    width: 50%;
+    border-radius: 8px;
+    border: none;
+
+    padding: 1em;  
+    
+    margin-right: 20px;
+}
+
+.free-choice p {
+    margin: 24px;
+    font-size: 1.25rem;
+}
+
+
+
+.pro-choice {
+    background-color: white;
+    width: 50%;
+    border-radius: 8px;
+    border: none;
+
+    color: black;
+
+    padding: 1em;
+
+    margin-left: 20px;
+}
+
+.pro-choice p {
+    margin: 24px;
+    font-size: 1.25rem;
+}
+
+.price-btn {
+    background:rgb(102, 61, 148);
+    text-align: center;
+    padding: .5em;
+
+    border-radius: 5px;
+    border: none;
+}
+
+.price-btn-1 {
+    background-color: #111;
+    text-align: center;
+    padding: .5em;
+
+    border-radius: 5px;
+    border: none;
+}
+
+
+
