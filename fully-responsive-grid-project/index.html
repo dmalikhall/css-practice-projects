@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Grid Practice</title>
+</head>
+
+<body>
+    <div class="mobile-navigation" id="mobile-navigation">
+        <div class="mobile-navigation-header">
+
+            <div class="close-button" onclick="toggleMobileNavigation()">
+                <button>
+                    <i class="fa fa-close"></i>
+                </button>
+            </div>
+        </div>
+
+        <a href="#" class="mobile-nav-items">Home</a>
+        <a href="#" class="mobile-nav-items">Men's</a>
+        <a href="#" class="mobile-nav-items">Women's</a>
+        <a href="#" class="mobile-nav-items">Kid's</a>
+        <a href="#" class="mobile-nav-items">Pages</a>
+        <a href="#" class="mobile-nav-items">Features</a>
+        <a href="#" class="mobile-nav-items">Explore</a>
+    </div>
+
+
+    <div id="container">
+        <header>
+            <nav>
+                <div class="brand">Hexashop</div>
+
+                <div class="nav-list">
+                    <a class="grey-text" href="#" class="nav-items">Home</a>
+                    <a href="#" class="nav-items">Men's</a>
+                    <a href="#" class="nav-items">Women's</a>
+                    <a href="#" class="nav-items">Kid's</a>
+                    <a href="#" class="nav-items">Pages</a>
+                    <a href="#" class="nav-items">Features</a>
+                    <a href="#" class="nav-items">Explore</a>
+                </div>
+            </nav>
+
+            <div class="menu-button" onclick="toggleMobileNavigation()">
+                <button>
+                    <i class="fa fa-reorder"></i>
+                </button>
+            </div>
+
+        </header>
+        <hr />
+
+        <section class="content-container">
+            <div class="main-content">
+                <a href="#" class="card card-home-col-2">
+                    <img src="images/grid-home.jpg" alt="home">
+
+                    <div class="details">
+                        <h1 class="home">We Are Hexashop</h1>
+
+                        <p class="home">Awesome, clean & creative HTML5 Template</p>
+
+                        <button>Purchase Now!</button>
+                    </div>
+
+                </a>
+
+                <a href="#" class="card">
+                    <img src="images/grid-women.jpg" alt="Women">
+
+                    <div class="details">
+                        <h1>Women</h1>
+
+                        <p>Best Clothes For Women</p>
+                    </div>
+
+                </a>
+
+                <a href="#" class="card">
+                    <img src="images/grid-men.jpg" alt="Men">
+
+                    <div class="details">
+                        <h1>Men</h1>
+
+                        <p>Best Clothes For Men</p>
+                    </div>
+
+                </a>
+
+                <a href="#" class="card">
+                    <img src="images/grid-kid.jpg" alt="Kids">
+
+                    <div class="details">
+                        <h1>Kids</h1>
+
+                        <p>Best Clothes For Kids</p>
+                    </div>
+
+                </a>
+
+                <a href="#" class="card">
+                    <img src="images/grid-accessories.jpg" alt="Accessories">
+
+                    <div class="details">
+                        <h1>Accessories</h1>
+
+                        <p>Best Trend Accessories</p>
+                    </div>
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script>
+        function toggleMobileNavigation() {
+            let element = document.getElementById("mobile-navigation");
+
+            if (element.classList.contains("mobile-navigation-open")) {
+                element.classList.remove("mobile-navigation-open");
+            } else {
+                element.classList.add("mobile-navigation-open");
+            }
+        }
+    </script>
+</body>
+
+</html>
