@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="yourbag.css" rel="stylesheet">
+    <title>Bag</title>
+</head>
+<body>
+    <div id="container">
+        <div class="two-main-content"> <!--flex-->
+            <div class="content-left">
+                <div class="action-creator"> <!--flex-->
+                    <div class="action-left">
+                        <p class="green">Register now & get FREE standard shipping. US only</p>
+                        <div class="action-btn">
+                            <button class="register-btn">Register</button>
+                            <button class="login-btn">Log In</button>
+                        </div>
+                        
+                    </div>
+
+                    <div class="action-right">
+                        <div class="shopping">
+                            <i class="fa fa-shopping-cart"></i>
+                            <p>Faster Checkout</p>
+                        </div>
+
+                        <div class="exchange">
+                            <i class="fa fa-exchange"></i>
+                            <p>Easier returns and exhanges</p>
+                        </div>
+
+                        <div class="tracking">
+                            <i class="fa fa-cube"></i>
+                            <p>Quick order information and tracking</p>
+                        </div>                                             
+                    </div>
+
+
+                </div>
+
+                <!--  -->
+                <div class="left-cart-container">
+                    <h1>Your Bag
+                        <span class="num-item">(1 Item)</span>
+                    </h1>
+
+                    <div class="in-bag">
+                        <p class="ship">Shipping</p>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="cart-info"> <!--flex--> 
+                            <div class="cart-img">
+                                <img src="images/airforce.jpg">
+                            </div>
+
+                            <div class="cart-item-product"> <!--flex-->
+                                <div class="cart-item-information">
+                                    <h3>Air Force Ones</h3>
+                                    <p class="sku">Sku: 3025878-001</p>
+                                    <p>Color: White</p>
+                                    <p>Size: 10/11.5</p>
+
+                                    <div class="item-qnty">
+                                        <form>
+                                            <label for="numberofshoes">Qty</label>
+                                            <select name="quantity" id="numberofshoes">
+                                                <option value="one">1</option>
+                                                <option value="two">2</option>
+                                                <option value="three">3</option>
+                                                <option value="four">4</option>
+                                            </select>
+                                        </form>
+
+                                        <div class="shipment-choice">
+                                            <div class="choose">
+                                                <form>
+                                                    <div class="sta">
+                                                        <input type="radio" id="sta" name="sta">
+                                                        <label for="sta"><span><i class="fa fa-truck"></i></span>Ship To An Address</label><br>
+
+                                                    </div>
+
+                                                    <div class="pin">
+                                                        <input type="radio" id="pin" name="pin">
+                                                        <label for="pin"><span><i class="fa fa-home"></i></span>Pick Up In Store</label><br>
+
+                                                    </div>
+                                                                     
+                                                </form>
+                                                
+                                            </div>
+                
+                                            <div class="edits">
+                                                <div>Save</div>
+                                                <div>Edit</div>
+                                                <div>Remove</div>
+                                            </div>
+                
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="cart-item-price">
+                                    <p>$150.00</p>
+
+                                </div>                             
+                            </div>                          
+                        </div>
+
+                        
+
+                    </div>
+
+                    <!--  -->
+
+                    <div class="recommened">
+                        <div class="recommend-heading">
+                            <h1>You May Also Like</h1>
+                        </div>
+
+                        <div class="recommend-grid">
+                            <div class="rg-card-one">
+                                <div>
+                                    <img src="images/yml-1.jpg">                                  
+                                </div>
+                                <h3>Multi-Layers</h3>
+                                <p>$110.00</p>
+                            </div>
+
+                            
+
+                            <div class="rg-card-two">
+                                <div>
+                                    <img src="images/ymml-3.jpg">
+                                </div>
+                                <h3>Grey Flights</h3>
+                                <p>$170.00</p>
+                            </div>
+
+                            <div class="rg-card-three">
+                                <div>
+                                    <img src="images/yml-4.jpg">
+                                </div>
+                                <h3>Tarheel Flights</h3>
+                                <p>$150.00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-right">
+                <div class="right-inner-content">
+                    <div class="order-summary">
+                        <div class="order-title">
+                            Order Summary
+                        </div>
+
+                        <div class="order-summary-items">
+                            <div class="subtotal">
+                                <p>Subtotal(1): </p>
+                                <p>$150.00</p>
+                            </div>
+
+                            <div class="estimated-tax">
+                                <p>Estimated Tax:</p>
+                                <p>$0.00</p>
+                            </div>
+
+                            <div class="estimated-shipping">
+                                <p>Estimated Shipping:</p>
+                                <p>Free</p>
+                            </div>
+                        </div>
+
+                        <div class="complete-sum">
+                            <div class="estimated-total">
+                                <h2>Estimated Total:</h2>
+                                <h2>$150.00</h2>
+                            </div>
+
+                            <p>4 interest-free payments of $37.50 with Klarna. Learn more</p>
+                        </div>
+
+                        <div class="promo">
+                            <div class="checkout-btn">
+                                <button class="final-checkout">Checkout</button>
+                                <button class="pp-btn">
+                                    <i class="fa fa-paypal"></i>
+                                    <p>PayPal</p> 
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
