@@ -127,3 +127,30 @@ button {
     border-radius: 4px
 }
 
+@media (max-width: 767px) {
+
+    .register-container {
+        max-width: 100%;
+    }
+    .name {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+        
+    }
+    
+    .number-website {
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 0;
+        
+    }
+    
+    .password {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+        
+    }
+}
+
